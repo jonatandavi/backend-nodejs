@@ -20,12 +20,6 @@
   </a>
 </p>
 
-<div align="center">
-    <img src="./images/home.png" width="200" height="400" /> 
-    <img src="./images/Screen1.png" width="200" height="400" /> 
-    <img src="./images/Screen2.png" width="200" height="400" />
-</div>
-
 ---
 
 ## Table of Contents
@@ -44,9 +38,7 @@
 
 ### Prerequisites
 
-- You have to install the Java in your machine, you can do bu clicking [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj86OGn3s_qAhWxGbkGHWgIDLEQjBAwAXoECAYQAg&url=https%3A%2F%2Fwww.java.com%2Fpt_BR%2Fdownload%2F&usg=AOvVaw2xls_-5O4ST3cU7is5scWk)
-- To run this Android application you will have to install the Android Strudio, you can install by clicking [here](https://developer.android.com/studio).
-- It's recommended that you do first the Hello World App to setup correctly your Android Studio.
+- You have to install the NodeJS first, you can do by clicking [here](https://nodejs.org/en/)
 
 ### Clone
 
@@ -56,25 +48,41 @@
 $ git clone https://github.com/jonatandavi/Estoque.git
 ```
 
+### Setup
+
+- After clone this repo, go to the folder of the project and run:
+
+```
+$ npm install
+```
+
+- Then run:
+
+```
+$ npm start
+```
+
 ---
 
 ## 📋 Features
 
 ### Documentation
 
-- [x] Create API connectivity using Retrofit
-- [x] Create the screens of CRUD
-- [x] Implement barcode reading function
-- [ ] Make layout friendly
+- [x] Create the structure of the project
+- [x] Implement the Controllers
+- [x] Test with [Insominia](https://insomnia.rest/download/)
 
 ### Build with
 
 - Core
-  - [Android Studio](https://developer.android.com/studio) - Android Studio provides the fastest tools for building apps on every type of Android device.
-  - [Java](https://www.java.com/) - A programming language that makes developers happier.
-- Access to API
-  - [Retrofit](https://square.github.io/retrofit/) - A type-safe HTTP client for Android and Java.
-
+  - [Javascript](https://www.javascript.com) - JavaScript is a structured interpreted programming language, high-level script with weak dynamic typing and multiparadigm
+  - [NodeJS](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine
+- Database
+  - [SQLite](https://www.sqlite.org/index.html) - SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world
+  - [KnexJS](http://knexjs.org) - Knex.js is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use
+- Other NPM Packages
+  - [ExpressJS](https://expressjs.com/pt-br/)
+  - Cors
 ---
 
 ## 🤔 Contributing
@@ -83,7 +91,7 @@ If you want to contribute with this project, just follow the steps
 
 - Fork this repo!
 
-- Clone this repo to your local machine using `https://github.com/jonatandavi/Estoque.git`
+- Clone this repo to your local machine using `https://github.com/jonatandavi/backend-nodejs.git`
 
 - Create your feature branch using `git checkout -b my-feature`
 
