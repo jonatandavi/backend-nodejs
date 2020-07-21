@@ -71,6 +71,7 @@ $ npm start
 - [x] Create the structure of the project
 - [x] Implement the Controllers
 - [x] Test with [Insominia](https://insomnia.rest/download/)
+- [x] JWT Auth
 
 ### Build with
 
@@ -80,6 +81,8 @@ $ npm start
 - Database
   - [SQLite](https://www.sqlite.org/index.html) - SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world
   - [KnexJS](http://knexjs.org) - Knex.js is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use
+- Auth
+  - [JWT](https://jwt.io) - JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties
 - Other NPM Packages
   - [ExpressJS](https://expressjs.com/pt-br/)
   - Cors

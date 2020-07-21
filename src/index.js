@@ -1,3 +1,7 @@
+//jwt auth
+require("dotenv-safe").config();
+var jwt = require('jsonwebtoken');
+
 const express = require('express');
 const routes = require('./routes');
 

@@ -1,4 +1,6 @@
 const connection = require('../database/connection');
+require("dotenv-safe").config();
+var jwt = require('jsonwebtoken');
 
 module.exports = {
     async create(request,response){
@@ -12,6 +14,14 @@ module.exports = {
             return response.status(400).json({ error: "ONG não encontrada" });
         }
 
-        return response.json(ong);
+        var token = jwt.sign({ id }, process.env.SECRET, {
+            expiresIn: 300 //5 min
+        })
+
+        return response.json({auth: true, token: token});
+    },
+
+    async logout(request, response){
+        response.json({auth: false, token: null})
     }
 }
