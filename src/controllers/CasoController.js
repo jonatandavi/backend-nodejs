@@ -3,6 +3,9 @@ const connection = require('../database/connection');
 module.exports ={
     async create(request, response) {
         const { title, description, value } = request.body;
+
+        //console.log(request.body);
+        //console.log(request.headers);
         
         //Por boas práticas, tudo que é autorização ou relacionamentos entram no Header
         const ongs_id = request.headers.authorization;
@@ -13,22 +16,19 @@ module.exports ={
             description, 
             value,
             ongs_id,
-        })
-
-
+        });
+        console.log(id)
         return response.json({ id });
     },
 
     async list(request, response){
         //fazendo paginação de 5 em 5
-        const { page = 1} = request.query;
+        //const { page = 1} = request.query;
 
         const [count] = await connection('casos').count();
 
         const casos = await connection('casos')
             .join('ongs', 'ongs.id', '=', 'casos.ongs_id')
-            .limit(5)
-            .offset((page - 1) * 5)
             .select([
                 'casos.*',
                 'ongs.name', 

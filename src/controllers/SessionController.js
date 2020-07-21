@@ -18,7 +18,7 @@ module.exports = {
             expiresIn: 300 //5 min
         })
 
-        return response.json({auth: true, token: token});
+        return response.json({auth: true, token: token, name: ong.name});
     },
 
     async logout(request, response){

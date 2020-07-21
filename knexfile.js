@@ -3,9 +3,12 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+    client: 'mysql',
     connection: {
-      filename: './src/database/db.sqlite'
+      host: '127.0.0.1',
+      database: 'github',
+      user: 'jonatanGit',
+      password: 'Github.1'
     },
     migrations: {
       directory: './src/database/migrations'

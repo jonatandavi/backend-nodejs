@@ -55,7 +55,12 @@ $ git clone https://github.com/jonatandavi/Estoque.git
 ```
 $ npm install
 ```
+- To setup your MySQL, connect with your database on `knexfile.js` changing the information of `database`, `user` and `password`. Then run the comands:
 
+```
+$ npx knex migrate:rollback
+$ npx knex migrate:latest
+```
 - Then run:
 
 ```
@@ -72,6 +77,7 @@ $ npm start
 - [x] Implement the Controllers
 - [x] Test with [Insominia](https://insomnia.rest/download/)
 - [x] JWT Auth
+- [x] Adding connection with MySQL
 
 ### Build with
 
@@ -79,7 +85,7 @@ $ npm start
   - [Javascript](https://www.javascript.com) - JavaScript is a structured interpreted programming language, high-level script with weak dynamic typing and multiparadigm
   - [NodeJS](https://nodejs.org/en/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine
 - Database
-  - [SQLite](https://www.sqlite.org/index.html) - SQLite is a C-language library that implements a small, fast, self-contained, high-reliability, full-featured, SQL database engine. SQLite is the most used database engine in the world
+  - [MySQL](https://www.mysql.com) - MySQL, the most popular Open Source SQL database management system, is developed, distributed, and supported by Oracle Corporation
   - [KnexJS](http://knexjs.org) - Knex.js is a "batteries included" SQL query builder for Postgres, MSSQL, MySQL, MariaDB, SQLite3, Oracle, and Amazon Redshift designed to be flexible, portable, and fun to use
 - Auth
   - [JWT](https://jwt.io) - JSON Web Tokens are an open, industry standard RFC 7519 method for representing claims securely between two parties
