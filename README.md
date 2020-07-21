@@ -2,7 +2,7 @@
   Simple Back End in NodeJS
 </h2>
 
-<p align="center">The project was created by Jonatan Davi initially as a object of study in the course Semana Oministack of <a href="https://rocketseat.com.br">Rocktseat</a>, then he decided to create a Open Source project to help another people with the studies! The project is a backend model using NodeJS with SQLite.</p>
+<p align="center">The project was created by Jonatan Davi initially as a object of study in the course Semana Oministack of <a href="https://rocketseat.com.br">Rocktseat</a>, then he decided to create a Open Source project to help another people with the studies! The project is a backend model using NodeJS with MySQL.</p>
 
 <p align="center">
   <a href="https://github.com/jonatandavi">
